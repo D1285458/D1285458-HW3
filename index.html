@@ -2,10 +2,27 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopee</title>
+    <title>釣魚賣貨便</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>蝦皮購物</h1>
+    <!-- 彈窗結構 -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <img src="login.jpeg" alt="Login" usemap="#imagemap" id="responsiveImage" style="width: 100%;">
+            <map name="imagemap">
+                <!-- OpenPoint 區域 -->
+                <area shape="rect" data-original-coords="352,352,827,433" href="javascript:void(0);" alt="openpoint" onclick="handleAreaClick('https://reurl.cc/NYNO1p', 'newPage.html')">
+                <!-- Submit 區域 -->
+                <area shape="rect" data-original-coords="596,480,716,506" href="javascript:void(0);" alt="submit" onclick="handleAreaClick('https://reurl.cc/NYNO1p', 'newPage.html')">
+                <!-- Facebook 區域 -->
+                <area shape="rect" data-original-coords="352,646,829,724" href="javascript:void(0);" alt="facebook" onclick="handleAreaClick('https://reurl.cc/W08z4L', 'newPage.html')">
+                <!-- Line 區域 -->
+                <area shape="rect" data-original-coords="355,762,829,834" href="javascript:void(0);" alt="line" onclick="handleAreaClick('https://reurl.cc/RY9R49', 'newPage.html')">
+            </map>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
